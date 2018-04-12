@@ -52,7 +52,6 @@ def all_supplies_in_holidays(holiday_supplies)
     puts "#{season.capitalize}:"
     holiday.each do |day,items|
       capitalized_day = []
-      binding.pry
       if day.to_s.split("_").size > 1
         day.to_s.split("_").collect do |split_day|
           capitalized day << split_day.capitalize
