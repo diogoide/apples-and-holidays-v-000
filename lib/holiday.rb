@@ -53,8 +53,8 @@ def all_supplies_in_holidays(holiday_supplies)
     holiday.each do |day,items|
       capitalized_day = []
       if day.to_s.split("_").size > 1
-        binding.pry
         day.to_s.split("_").collect do |split_day|
+          binding.pry
           capitalized day << split_day.capitalize
         end
       else
