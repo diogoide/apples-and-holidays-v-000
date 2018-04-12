@@ -55,7 +55,7 @@ def all_supplies_in_holidays(holiday_supplies)
       binding.pry
       if day.to_s.split("_").size > 1
         day.to_s.split("_").collect do |split_day|
-          pry
+          binding.pry
           capitalized day << split_day.capitalize
         end
       else
