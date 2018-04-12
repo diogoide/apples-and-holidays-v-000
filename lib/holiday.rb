@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_supplies)
       else
         capitalized_day << day.capitalize
       end
-        puts " #{capitalized_day.join(" ")}: #{items.join(", ")}"
+        puts "#{capitalized_day.join(" ")}: #{items.join(", ")}"
       end
     end
 end
